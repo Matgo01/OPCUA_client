@@ -1,0 +1,8 @@
+# config_pressure.yaml
+
+pressure_node:
+  node_id: 'ns=3;i=0'  # Node ID for pressure
+  data_type: 'Float'  # Data type of the pressure value
+  unit: 'Millibar'  # Unit of pressure measurement
+  display_name: 'Pressure'  # Display name for the pressure node
+  description: 'Pressure sensor reading'  # Description of the pressure node

@@ -1,0 +1,8 @@
+# config_temp.yaml
+
+temperature_node:
+  node_id: 'ns=3;i=1008'  # Node ID for temperature
+  data_type: 'Float'  # Data type of the temperature value
+  unit: 'Celsius'  # Unit of temperature measurement
+  display_name: 'Temperature'  # Display name for the temperature node
+  description: 'Temperature sensor reading'  # Description of the temperature node

@@ -1,0 +1,32 @@
+version: '3'
+services:
+  opcua_client:
+    image: matgo01/lastrarepodocker:opcua_client5
+    restart: always
+    depends_on:
+      - mysql
+  spring_backend:
+    image: matgo01/lastrarepodocker:spring_backend1
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql
+    restart: always
+  frontend_app:
+    image: matgo01/lastrarepodocker:frontend_app6
+    ports:
+      - "8080:8080"
+    depends_on:
+      - spring_backend
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: my_sensors_database
+    volumes:
+      - mysql-data:/data/docker/volumes
+volumes:
+  mysql-data:
+    driver: local

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "addressS7Server": "192.168.28.139",
+        "rack": 26,
+        "slot": 0,
+        "dbNumber": 1,
+        "nodeConfigs": [
+            {
+                "nodeId": "Portate",
+                "name": "Portate",
+                "frequency": 10.0
+            }
+        ]
+    }
+]

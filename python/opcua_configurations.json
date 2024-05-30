@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "addressOpcuaServer": "192.168.25.12",
+        "nodeConfigs": [
+            {
+                "nodeId": "pressure",
+                "name": "pressure",
+                "frequency": 10.0
+            },
+            {
+                "nodeId": "temperature",
+                "name": "temperature",
+                "frequency": 15.0
+            }
+        ]
+    }
+]

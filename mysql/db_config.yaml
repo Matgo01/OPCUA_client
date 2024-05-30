@@ -1,0 +1,6 @@
+database:
+  username: docker_user
+  password: Matteo2004x!
+  hostname: 192.168.25.169
+  port: 3306
+  database_name: my_sensors_database
